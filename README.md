@@ -7,7 +7,7 @@ This project rocks and uses MIT-LICENSE.
 Cos CRM Lead Importer works with Cos CRM 0.14.0 onwards. You can add this to your Gemfile:
 
 ```ruby
-gem 'ccrm_import_leads', :git => 'https://github.com/georgTW/Cos-CRM-Lead-Importer.git', :branch => "master"
+gem 'ccrm_import_leads', :git => 'https://github.com/SlimBN/Cos-CRM-Lead-Importer.git', :branch => "master"
 ```
 
 If you use the WorldCard Mobile app - use the master branch ````:branch => "master"```` otherwise you can use the not maintained ````generic_csv```` branch.
