@@ -1,7 +1,7 @@
 require 'open3'
 class Admin::ImportLeadsController < Admin::ApplicationController
   before_action :require_admin_user
-  before_action "set_current_tab('admin/import_leads')"
+  before_action :setup_current_tab
 
   def index
     redirect_to :action => :new
@@ -40,6 +40,10 @@ class Admin::ImportLeadsController < Admin::ApplicationController
         flash[:error] = t(:msg_gdrive_error, error)
         redirect_to new_admin_import_lead_path
     end
+  end
+
+  def setup_current_tab
+    set_current_tab('admin/import_leads')
   end
 
 end
